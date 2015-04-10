@@ -16,35 +16,31 @@ var apply = require('./')
  * tests.
  */
 
-test('apply(fn, args)', function (t) {
+test('apply(func)', function (t) {
+  t.plan(1)
+
+  var five = (function constant (val) {
+    return function () { return val }
+  })(5)
+
+  t.equal(apply(five), 5)
+})
+
+test('apply(func, args)', function (t) {
   t.plan(1)
   t.equal(apply(Math.max, [20, 30, 15]), 30)
 })
 
-test('apply(fn, args, def)', function (t) {
+test('apply(func, args, self)', function (t) {
   t.plan(1)
 
-  function max () {
-    return Math.max.apply(null, this.val)
+  function divmax (divisor) {
+    return Math.max.apply(null, this.val) / divisor
   }
 
   var data = {
-    val: [3, 2, 1]
+    val: [9, 7, 15, 12]
   }
 
-  t.equal(apply(max, null, null, data), 3)
-
-})
-
-test('apply(fn, args, def, self)', function (t) {
-  t.plan(1)
-
-  var obj = {
-    max: function () {
-      return Math.max.apply(null, this.val)
-    },
-    val: [3, 2, 1]
-  }
-
-  t.equal(apply(obj.max, null, null, obj), 3)
+  t.equal(apply(divmax, 5, data), 3)
 })

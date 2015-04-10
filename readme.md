@@ -6,20 +6,34 @@
 
     $ npm install apply-or --save
 
+## Why?
+
+`Function.prototype.bind` is normally sufficient; however, there are situations where it is useful to treat a value as a `Function` (invoke it) only if it is indeed a `Function`; otherwise, return it as-is. Calling `.apply` on a value that is not a function would cause an error.
+
 ## Example
 
     var apply = require('apply-or');
 
-    function max () {
-      return Math.max.apply(null, this.val)
+    function divmax (divisor) {
+      return Math.max.apply(null, this.val) / divisor
     }
 
     var data = {
-      val: [3, 2, 1]
+      val: [9, 7, 15, 12]
     }
 
-    apply(max, null, null, data)
+    apply(divmax, 5, data)
+    //=> divmax.apply({ val: [9, 7, 15, 12] }, [5])
+    //=> 15 / 5
     //=> 3
+
+## API
+
+###### `apply(func, args, self)`
+
+ * `func` Function to be invoked.
+ * `args` Arguments to apply to function.
+ * `self` `this` value.
 
 ## License
 

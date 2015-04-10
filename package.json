@@ -4,7 +4,7 @@
   "description": "Invoke .apply if value is a function, otherwise, return default value.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -V -x 'npm run test' -e 'js json'",
+    "dev": "nodemon -x 'npm run test' -e 'js json'",
     "standard": "standard",
     "test": "node test.js test/**/*.js | tap-spec",
     "pretest": "npm run standard"
