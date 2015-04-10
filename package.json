@@ -1,6 +1,6 @@
 {
   "name": "apply-or",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Invoke .apply if value is a function, otherwise, return default value.",
   "main": "index.js",
   "scripts": {
