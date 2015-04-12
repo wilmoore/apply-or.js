@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.2.3 - 2015-04-12
+### Changed
+- Moved license badge to bottom.
+
 ## 0.2.2 - 2015-04-12
 ### Changed
 - Changed order of badges.
