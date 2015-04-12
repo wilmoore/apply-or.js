@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.2.2 - 2015-04-12
+### Changed
+- Changed order of badges.
+
 ## 0.2.1 - 2015-04-12
 ### Added
 - `.editorconfig`
