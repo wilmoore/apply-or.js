@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.3.4 - 2015-04-12
+### Changed
+- Dropped saucelabs stuff from .travis.yml.
+
 ## 0.3.3 - 2015-04-12
 ### Changed
 - Tried Zuul & Browserify + Coverify + Testling
