@@ -12,9 +12,7 @@ before_script:
 
 script:
   - "npm test"
-
-after_script:
-  - "npm test:browser"
+  - "npm run test:browser"
 
 env:
   global:
