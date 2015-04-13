@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon -x 'npm run test' -e 'js json'",
     "standard": "standard",
-    "test": "browserify -t coverify test.js | testling | coverify | tap-spec",
-    "pretest": "npm run standard"
+    "test": "standard && browserify -t coverify test.js | testling | coverify | tap-spec"
   },
   "repository": {
     "type": "git",
