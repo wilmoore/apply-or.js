@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.3.5 - 2015-04-12
+### Added
+- add istanbul for code coverage.
+
 ## 0.3.4 - 2015-04-12
 ### Changed
 - Dropped saucelabs stuff from .travis.yml.
