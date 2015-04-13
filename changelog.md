@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.2.4 - 2015-04-12
+### Changed
+- Tried Zuul & Browserify + Coverify + Testling
+- Zuul is great, saucelabs doesn't provide a sane badge per repo.
+- Testling doesn't seem to be maintained any longer.
+
 ## 0.2.3 - 2015-04-12
 ### Changed
 - Moved license badge to bottom.
