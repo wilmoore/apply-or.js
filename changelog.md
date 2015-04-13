@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.4.0 - 2015-04-12
+### Changed
+- moved dependancy badge to npm stats section.
+
 ## 0.3.5 - 2015-04-12
 ### Added
 - add istanbul for code coverage.
