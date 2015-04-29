@@ -50,4 +50,4 @@ apply(divmax, 5, data)
 
 ## Licenses
 
-[![GitHub license](https://img.shields.io/github/license/wilmoore/apply-or.js.svg)](https://github.com/wilmoore/apply-or.js/blob/master/index.js)
+[![GitHub license](https://img.shields.io/github/license/wilmoore/apply-or.js.svg)](https://github.com/wilmoore/apply-or.js/blob/master/license)
