@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.5.0 - 2015-04-29
+### Changed
+- update `.travis`.
+
+### Changed
+- fixpack.
+
+### Removed
+- removed `.zuul`.
+
 ## 0.4.0 - 2015-04-12
 ### Changed
 - moved dependancy badge to npm stats section.
