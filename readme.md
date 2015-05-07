@@ -13,12 +13,27 @@ npm install apply-or --save
 
 ## Why?
 
-`Function.prototype.bind` is normally sufficient; however, there are situations where it is useful to treat a value as a `Function` (invoke it) only if it is indeed a `Function`; otherwise, return it as-is. Calling `.apply` on a value that is not a function would cause an error.
+`Function.prototype.apply` is normally sufficient; however, there are situations where it is useful to treat a value as a `Function` (invoke it) only if it is indeed a `Function`; otherwise, return it as-is. Calling `.apply` on a value that is not a function would cause an error.
 
-## Example
+## Examples
+
+###### [delay.js](examples/delay.js)
 
 ```js
-var apply = require('apply-or');
+var apply = require('apply-or')
+
+function delay (cb) {
+  setTimeout(apply.bind(null, cb))
+}
+
+delay('Hello') // does nothing (because argument is not a function)
+delay(console.log.bind(console, 'Hello, World')) // prints 'Hello, World' to stdout
+```
+
+###### [divmax.js](examples/divmax.js)
+
+```js
+var apply = require('apply-or')
 
 function divmax (divisor) {
   return Math.max.apply(null, this.val) / divisor

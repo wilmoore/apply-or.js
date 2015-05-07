@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.5.1 - 2015-05-07
+### Changed
+- updated examples.
+
 ## 0.5.0 - 2015-04-29
 ### Changed
 - update `.travis`.
