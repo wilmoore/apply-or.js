@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.5.2 - 2015-05-30
+### Changed
+- add `npm run release-*` scripts.
+
 ## 0.5.1 - 2015-05-07
 ### Changed
 - updated examples.
